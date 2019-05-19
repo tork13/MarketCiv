@@ -1,0 +1,101 @@
+1. determine currency and items that can be traded
+    a. currency
+        1.gold/silver -- nope
+        2.dollars
+        3.coins and bills
+        4 premium currency?
+    b. Items. will there be levels of trading? items accessible later in game?
+        Level 1
+            1.wool
+            2.timber
+            3.ore
+            4.stone
+            5.wheat
+        Level 2
+            1.cloth
+            2.lumber
+            3.iron
+            4.copper
+            5.gravel
+            6.chicken
+        Level 3
+            1.Denim
+            2. 2-by-4s
+            3.bronze
+            4.Steel
+            5. clay
+            6. Cow
+            7. eggs
+        Level 4
+            1.
+            2.
+            3.Brick
+            4.Silver
+            5.plastic
+            6.Pig
+            7.Beef
+        Level 5
+            1.
+            2.
+            3.Gold
+            4.
+            5.
+            6.
+            7.
+            8.
+            9.pork
+        Level 6
+            1.
+            2.
+            3.
+            4.
+            5.
+            6.
+            7.
+            8.
+            gemstones unlock at level 6 and are available during their months
+
+            Stuff to add
+            -Diamonds
+            -Platnuim
+            -toys
+            -tools
+            -
+            -
+            -
+            -
+            -
+            -
+2. skills for each person. Professions
+    a. produce a certain item?
+        1. mine
+            Level 1: Stone and Ore
+        2. field
+            Level 1: Wheat and timber
+        3. barn
+            Level 1: Wool
+    b. more money for a certain item?
+        1. farmer - helps with food and farm production
+        2. miner - helps with rocks and ores
+        3. carpenter - helps with anything that is built
+        4.
+    c. one building per level to boost certain item or produce others or upgrade one building
+    d. every level you get a upgrade point. You can get new building or upgrade old building.
+3.Buildings
+    a. Ore processor
+    b. wood processor
+    c. butcher
+    d. mine
+    e. field
+    f. barn
+    g. seamstress
+
+4. create save file algorithm
+5.text based or with visuals
+6. live market
+7. offline or online or both
+8. will this be a city builder but focused in trading?
+    a. alternatives to city builder?
+        1.collecting game?
+        2.trade for money and buy achievements/ decorations to brag or decorate home base
+9. Create web for items and how to build/get them
