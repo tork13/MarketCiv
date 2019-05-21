@@ -1,23 +1,31 @@
 package MarketCivPackage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 
 public class Main {
 
     public static void main(String[] args) throws IOException{
+
         String file_name = "SaveFile.txt";
-        Retrieve(file_name);
-        Save(file_name,5);
+        ArrayList saveText = new ArrayList();
+        MarketCivGUI  myGUI = new MarketCivGUI();
+        myGUI.setVisible(true);
+
+        Resource[] Resources = new Resource[12];
+        for( int i = 0; i < Resources.length; i++ ){
+
+        }
 
     }
 
-    public static void Retrieve(String file_name) {
+    public static void Retrieve(String file_name,ArrayList saveText) {
         try {
             ReadFile file = new ReadFile(file_name);
             String[] aryLines = file.OpenFile();
             for (int i = 0; i < aryLines.length; i++) {
-                System.out.println("get");
+                saveText.add(aryLines[i]);
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());
