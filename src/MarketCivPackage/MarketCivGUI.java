@@ -1,15 +1,17 @@
 package MarketCivPackage;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class MarketCivGUI extends JFrame {
     private JPanel rootPanel;
-    private JTextPane textFieldRightTextPane;
-    private JTextPane textFieldBottomTextPane;
-    private JTextPane textFieldLeftTextPane;
     private JButton buyButton;
     private JButton sellButton;
-    private JTextArea quantityTextArea;
+    private JTextField itemTextField;
+    private JTextField textFieldQuantity;
+    private JPanel MarketPanel;
+    private JLabel errorLabel;
+    private JTextArea marketAuctionText;
 
     public MarketCivGUI(){
         add(rootPanel);
@@ -17,7 +19,14 @@ public class MarketCivGUI extends JFrame {
         setSize(1000,1000);
 
 
-
     }
+
+    public void errorLabelSetText(String inputText){
+        errorLabel.setText(inputText);
+    }
+    public void marketAuctionSetText(String inputText){
+        marketAuctionText.setText(inputText);
+    }
+
 
 }

@@ -15,19 +15,20 @@ Figure out what happens when they log on. Run through the fie and set the values
         Level 1
             1.wool
             2.timber
-            3.Ore
             4.stone
             5.wheat
         Level 2
             1.cloth
             2.lumber
+             Ore
             3.iron
-            4.copper
             5.gravel
             6.chicken
         Level 3
             1.Denim
             2. 2-by-4s
+
+            4.copper
             3.bronze
             4.Steel
             5. clay
