@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException{
         String file_name = "SaveFile.txt";
+        String marketText = "";
         Resource[] ResourcesShell ={new Resource(0,0,"Wool",1),
                                     new Resource(0,0,"Timber",1),
                                     new Resource(0,0,"Stone",1),
@@ -15,11 +16,10 @@ public class Main {
         Retrieve(file_name,ResourcesShell);//
         MarketCivGUI  myGUI = new MarketCivGUI();
         myGUI.setVisible(true);
-
-
         for(int i = 0; i < ResourcesShell.length; i++ ){
-
+        marketText = marketText + ResourcesShell[i].getType() + " Cost: "+ ResourcesShell[i].getCost() + "\n" ;
         }
+        myGUI.marketAuctionSetText(marketText);
 
     }
 
