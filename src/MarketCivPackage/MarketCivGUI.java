@@ -12,6 +12,9 @@ public class MarketCivGUI extends JFrame {
     private JPanel MarketPanel;
     private JLabel errorLabel;
     private JTextArea marketAuctionText;
+    private JTextArea buildingsText;
+    private JTextArea upgradesText;
+    private JTextArea cityHallText;
 
     public MarketCivGUI(){
         add(rootPanel);
@@ -21,12 +24,20 @@ public class MarketCivGUI extends JFrame {
 
     }
 
-    public void errorLabelSetText(String inputText){
+    public void setErrorLabel(String inputText){
         errorLabel.setText(inputText);
     }
-    public void marketAuctionSetText(String inputText){
+    public void setMarketAuctionText(String inputText){
         marketAuctionText.setText(inputText);
     }
+    public void setCityHallText(String inputText){
+        cityHallText.setText(inputText);
+    }
+    public void setUpgradesText(String inputText){
+        upgradesText.setText(inputText);
+    }
 
-
+    public void setBuildingsText(String inputText) {
+        buildingsText.setText(inputText);
+    }
 }
