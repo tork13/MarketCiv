@@ -5,20 +5,19 @@ import java.util.ArrayList;
 
 
 public class Main {
-
     public static void main(String[] args) throws IOException {
         String file_name = "SaveFile.txt";
 
-        Resource[] ResourcesShell = {new Resource(0, 0, "Wool", 1),
+         Resource[] ResourcesShell = {
+                new Resource(0, 0, "Wool", 1),
                 new Resource(0, 0, "Timber", 1),
                 new Resource(0, 0, "Stone", 1),
                 new Resource(0, 0, "Wheat", 1)};
         Retrieve(file_name, ResourcesShell);//
         MarketCivGUI myGUI = new MarketCivGUI();
         myGUI.setVisible(true);
-        updateTextFields(myGUI,ResourcesShell);
-        Save(file_name, ResourcesShell);
-
+        myGUI.updateTextFields(ResourcesShell);
+        myGUI.setResourceShell(ResourcesShell);
 
     }
 
@@ -48,26 +47,14 @@ public class Main {
 
     }
 
-    public static void Save(String file_name, Resource[] Resources) throws IOException {
-        WriteFile data = new WriteFile(file_name, true);
-        data.clearFile(file_name);
+    public static void Save( Resource[] Resources) throws IOException {
+        WriteFile data = new WriteFile("SaveFile.txt", true);
+        data.clearFile("SaveFile.txt");
         for (int i = 0; i <Resources.length ; i++) {
             data.writeToFile( + Resources[i].getCost()+ "\n"+ Resources[i].getQuantity());
         }
     }
 
-    public static void updateTextFields(MarketCivGUI myGUI, Resource[] Resources){
-        String marketText = "";
-        String resourceText = "";
-        for (int i = 0; i < Resources.length; i++) {
-            marketText = marketText + Resources[i].getType() + " Cost: " + Resources[i].getCost() + "\n";
-        }
-        for (int i = 0; i < Resources.length; i++){
-            resourceText = resourceText + Resources[i].getType() + " Quantity: " + Resources[i].getQuantity() + "\n";
-        }
-        myGUI.setMarketAuctionText(marketText);
-        myGUI.setCityHallText(resourceText);
-    }
 
 
 }
